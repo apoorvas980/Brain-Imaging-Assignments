@@ -22,3 +22,5 @@ filter_5=ndimage.gaussian_filter(brain_image,sigma=5)
 plt.imshow(filter_5)
 #show the image
 plt.show()
+#histogram of filter sigma 5
+plt.hist(filter_5[:,:,0])
