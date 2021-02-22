@@ -24,3 +24,5 @@ plt.imshow(filter_5)
 plt.show()
 #histogram of filter sigma 5
 plt.hist(filter_5[:,:,0])
+#show the histogram
+plt.show()
