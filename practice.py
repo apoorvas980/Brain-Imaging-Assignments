@@ -6,5 +6,5 @@ import numpy as np
 from scipy import ndimage
 #reading the image
 brain_image=plt.imread("brain.jpg")
-brain_image.shape
+print (brain_image.shape)
 1 #debugging
