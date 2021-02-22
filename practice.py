@@ -12,3 +12,5 @@ print (brain_image.shape)
 plt.imshow(brain_image,cmap='Greys_r')
 #display
 plt.show()
+#histogram of brain_image
+plt.hist(brain_image, bins=10)
