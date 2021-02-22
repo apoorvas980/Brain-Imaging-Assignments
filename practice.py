@@ -1,5 +1,5 @@
 #importing matplotlib
-import matplotlib.pyplot at plt
+import matplotlib.pyplot as plt
 #importing numpy
 import numpy as np
 #importing npimage
