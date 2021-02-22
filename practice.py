@@ -6,5 +6,9 @@ import numpy as np
 from scipy import ndimage
 #reading the image
 brain_image=plt.imread("brain.jpg")
+#print the dimensions
 print (brain_image.shape)
-1 #debugging
+#drwaing the image
+plt.imshow(brain_image,cmap='Greys_r')
+#display
+plt.show()
