@@ -13,4 +13,4 @@ plt.imshow(brain_image,cmap='Greys_r')
 #display
 plt.show()
 #histogram of brain_image
-plt.hist(brain_image, bins=10)
+plt.hist(brain_image[:,:,0], bins=10)
