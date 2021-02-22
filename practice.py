@@ -16,3 +16,9 @@ plt.show()
 plt.hist(brain_image[:,:,0], bins=10)
 #show the histogram
 plt.show()
+#gaussian filter sigma 5
+filter_5=ndimage.gaussian_filter(brain_image,sigma=5)
+#draw the image
+plt.imshow(filter_5)
+#show the image
+plt.show()
