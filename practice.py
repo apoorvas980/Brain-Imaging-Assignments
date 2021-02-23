@@ -16,13 +16,13 @@ plt.show()
 plt.hist(brain_image, bins=10)
 #show the histogram
 plt.show()
-#gaussian filter sigma 30
-filter_30=ndimage.gaussian_filter(brain_image,sigma=30)
+#gaussian filter sigma 40
+filter_40=ndimage.gaussian_filter(brain_image,sigma=40)
 #draw the image
-plt.imshow(filter_30, cmap='Greys_r')
+plt.imshow(filter_40, cmap='Greys_r')
 #show the image
 plt.show()
-#histogram of filter sigma 30
-plt.hist(filter_30)
+#histogram of filter sigma 40
+plt.hist(filter_40)
 #show the histogram
 plt.show()
