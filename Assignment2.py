@@ -23,6 +23,6 @@ plt.imshow(brain_filter_50, cmap='Greys_r')
 #display the image
 plt.show()
 #histogram for the filtered image
-plt.hist(brain_filter_40)
+plt.hist(brain_filter_50)
 #display the histogram
 plt.show()
