@@ -7,4 +7,4 @@ from scipy import ndimage
 #to read the brain image into the numpy ndarray
 brain_image=plt.imread("Brain.jpg")
 #to find out the dimensions of the image
-brain_image.shape
+print (brain_image.shape)
