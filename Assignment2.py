@@ -8,3 +8,7 @@ from scipy import ndimage
 brain_image=plt.imread("Brain.jpg")
 #to find out the dimensions of the image
 print (brain_image.shape)
+#to draw the brain image
+plt.imshow(brain_image)
+#to show the image
+plt.show()
