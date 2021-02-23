@@ -19,7 +19,7 @@ plt.show()
 #gaussian filter sigma 5
 filter_5=ndimage.gaussian_filter(brain_image,sigma=5)
 #draw the image
-plt.imshow(filter_5)
+plt.imshow(filter_5, cmap='Greys_r')
 #show the image
 plt.show()
 #histogram of filter sigma 5
