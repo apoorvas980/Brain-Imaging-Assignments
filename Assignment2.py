@@ -14,3 +14,5 @@ plt.imshow(brain_image, cmap='Greys_r')
 plt.show()
 #histogram of the image
 plt.hist(brain_image)
+#to display the histogram
+plt.show()
