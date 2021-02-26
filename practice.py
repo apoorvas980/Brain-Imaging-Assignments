@@ -23,6 +23,6 @@ plt.imshow(filter_50, cmap='Greys_r')
 #show the image
 plt.show()
 #histogram of filter sigma 40
-plt.hist(filter_50)
+plt.hist(filter_50, bins=10)
 #show the histogram
 plt.show()
