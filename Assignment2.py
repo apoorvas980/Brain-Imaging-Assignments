@@ -13,7 +13,7 @@ plt.imshow(brain_image, cmap='Greys_r')
 #to show the image
 plt.show()
 #histogram of the image
-plt.hist(brain_image)
+plt.hist(brain_image, bins=10)
 #to display the histogram
 plt.show()
 #applying gaussian filter with sigma=50
