@@ -5,7 +5,7 @@ import numpy as np
 #importing npimage
 from scipy import ndimage
 #reading the image
-brain_image=plt.imread("BrainNew.jpg")
+brain_image=plt.imread("Brain.jpg")
 #print the dimensions
 print (brain_image.shape)
 #drwaing the image
