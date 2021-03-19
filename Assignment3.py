@@ -21,9 +21,9 @@ if '1' in Subject_Response:
     Participant_Instruction_3 = visual.TextStim(mywin, 'If your cue says LETTER, press c if the letter in the pair is a consonant and v if it is a vowel', color=(1,1,1), colorSpace='rgb')
     Participant_Instruction_3.draw()
     mywin.update()
-    Subject_response_3 = event.waitKeys(keyList=['1'])
+    Subject_Response_3 = event.waitKeys(keyList=['1'])
     print(Subject_Response_3)
-    if ' 1' in Subject_Response_3:
+    if '1' in Subject_Response_3:
       Participant_Instruction_4 = visual.TextStim(mywin, 'If your cue says NUMBER, press o if the number in the pair is odd and e if it is even', color=(1,1,1), colorSpace='rgb')
       Participant_Instruction_4.draw()
       mywin.update()
@@ -46,6 +46,7 @@ if '1' in Subject_Response:
           Trial_Response_1 = event.waitKeys(keyList=['c','v'])
           print(Trial_Response_1)
           core.wait(2.0)
+        
           Cue_2 = visual.TextStim(mywin, 'NUMBER', color(1,1,1), colorSpace='rgb')
           Cue_2.draw()
           mywin.update()
@@ -53,6 +54,6 @@ if '1' in Subject_Response:
           Trial_2 = visual.TextStim(mywin, 'H4', color(1,1,1), colorSpace='rgb')
           Trial_2.draw()
           mywin.update()
-          Trial_Response_2 =  event.waitKeys(keyList=['e','o'])
+          Trial_Response_2 = event.waitKeys(keyList=['e','o'])
           print(Trial_Response_2)
           core.wait(2.0)
