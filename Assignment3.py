@@ -7,7 +7,7 @@ from psychopy.hardware import keyboard
 kb=keyboard.Keyboard()
 mywin= visual.Window([800,600], monitor ="myexperiment", units="degs")
 Participant_Instruction= visual.TextStim(mywin, 'Welcome to the experiment. Press 1 to continue',color=(1,1,1), colorSpace='rgb')
-Participant_Instruction,draw()
+Participant_Instruction.draw()
 mywin.update()
 Subject_Response = event.waitKeys(keyList=['1','2'])
 print(Subject_Response)
