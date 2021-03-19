@@ -56,7 +56,7 @@ if '1' in Subject_Response:
           Trial_Response_2 = event.waitKeys(keyList=['e','o'])
           print(Trial_Response_2)
           
-          Exp_Instructions = visual.TextStim(mywin, 'Trial over. Press 1 when ready' color=(1,1,1), colorSpace='rgb')
+          Exp_Instructions = visual.TextStim(mywin, 'Trial over. Press 1 when ready', color=(1,1,1), colorSpace='rgb')
           Exp_Instructions.draw()
           mywin.update()
           Exp_Response = event.waitKeys(keyList=['1'])
