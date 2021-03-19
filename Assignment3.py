@@ -18,7 +18,7 @@ if '1' in Subject_Response:
   Subject_Response_2 = event.waitKeys(keyList=['1'])
   print(Subject_Response_2)
   if '1' in Subject_Response_2:
-    Participant_Instruction_3 = visual.TextStim(mywin, 'If your cue says LETTER, press c if the letter in the pair is a consonant and v if it is a vowel', color=(1,1,1), colorSpce='rgb')
+    Participant_Instruction_3 = visual.TextStim(mywin, 'If your cue says LETTER, press c if the letter in the pair is a consonant and v if it is a vowel', color=(1,1,1), colorSpace='rgb')
     Participant_Instruction_3.draw()
     mywin.update()
     Subject_response_3 = event.waitKeys(keyList=['1'])
