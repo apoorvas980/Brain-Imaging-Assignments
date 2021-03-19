@@ -5,7 +5,7 @@ from datetime import datetime
 #import keyboard library
 from psychopy.hardware import keyboard
 kb=keyboard.Keyboard()
-mywin= visual.Window([800,600], monitor ='myexteriment", units="degs")
+mywin= visual.Window([800,600], monitor ="myexperiment", units="degs")
 Participant_Instruction= visual.TextStim(mywin, 'Welcome to the experiment. Press 1 to continue',color=(1,1,1), colorSpace='rgb')
 Participant_Instruction,draw()
 mywin.update()
