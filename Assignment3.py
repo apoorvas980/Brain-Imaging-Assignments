@@ -139,7 +139,7 @@ if '1' in Subject_Response:
             R8 = event.waitKeys(keyList=['c','v'])
             print(R8)
             
-            C9 = vsiaul.TextStim(mywin, 'NUMBER')
+            C9 = visual.TextStim(mywin, 'NUMBER')
             C9.draw()
             mywin.update()
             T9 = visual.TextStim(mywin, '8L')
