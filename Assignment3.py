@@ -164,4 +164,8 @@ if '1' in Subject_Response:
             R10 = event.waitKeys(keyList=['c','v'])
             print(R10)
             
-            
+Final_message = visual.TextStim(mywin, 'Thank You for participating')
+Final_message.draw()
+mywin.update()
+
+core.wait(2.0)
