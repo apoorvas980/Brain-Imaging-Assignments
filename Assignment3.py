@@ -1,7 +1,10 @@
 #importing different libraries from psychopy.
 from psychopy import visual, core, logging, event
 #to get timestamps, import datetime library
-from datetime import datetime 
+from datetime import datetime
+#to get timestamp and include it in the log file ExpLog
+timestamp=datetime.now().strftime("%d/%m%Y, %H%M%S)
+lastLog = logging.LogFile("ExpLog_"+timstamp+".log", level=logging.INFO, filemode ='w')
 #import keyboard library
 from psychopy.hardware import keyboard
 kb=keyboard.Keyboard()
