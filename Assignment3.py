@@ -7,6 +7,8 @@ timestamp=datetime.now().strftime("%d/%m%Y, %H%M%S")
 lastLog = logging.LogFile("ExpLog_"+timstamp+".log", level=logging.INFO, filemode ='w')
 #import keyboard library
 from psychopy.hardware import keyboard
+#to get a text file where participant responses will be exported and further analysis can be done based on reaction time 
+dataFile = open('Participant Response Record.csv', 'w')
 kb=keyboard.Keyboard()
 mywin= visual.Window([800,600], monitor ="myexperiment", units="degs")
 Participant_Instruction= visual.TextStim(mywin, 'Welcome to the experiment. Press 1 to continue',color=(1,1,1), colorSpace='rgb')
@@ -73,9 +75,13 @@ if '1' in Subject_Response:
             core.wait(1.5)
             T1 = visual.TextStim(mywin, '8E')
             T1.draw()
+            T1time=str(core.getTime(applyZone=True))
             mywin.update()
             R1 = event.waitKeys(keyList=['c','v'])
+            R1time=str(core.getTime(applyZone=True))
             print(R1)
+            dataFile.write('Stimulus Number'+','+'Stimulus Display Time'+','+'Response Time'+'\n')
+            dataFile.write('Stimulus1'+','+T1time+','+R1time+'\n')
             
             C2 = visual.TextStim(mywin, 'NUMBER')
             C2.draw()
