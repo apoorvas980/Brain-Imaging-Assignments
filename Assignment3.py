@@ -4,7 +4,7 @@ from psychopy import visual, core, logging, event
 from datetime import datetime
 #to get timestamp and include it in the log file ExpLog
 timestamp=datetime.now().strftime("%d/%m%Y, %H%M%S")
-lastLog = logging.LogFile("ExpLog_"+timstamp+".log", level=logging.INFO, filemode ='w')
+lastLog = logging.LogFile("ExpLog_"+timestamp+".log", level=logging.INFO, filemode ='w')
 #import keyboard library
 from psychopy.hardware import keyboard
 #to get a text file where participant responses will be exported and further analysis can be done based on reaction time 
